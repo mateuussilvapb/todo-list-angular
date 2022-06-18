@@ -26,10 +26,21 @@ export class UserService {
   }
   // ======================================= //
   postUsers(user: User) {
-    return this.http.post<User>(`${this.API_URL}`, user, {
+    return this.http.post<User>(`${this.API_URL}`, user, this.httpOptions);
+  }
+  // ======================================= //
+  deleteUser(id: number) {
+    return this.http.delete(`${this.API_URL}/id/${id}`);
+  }
+  // ======================================= //
+  updateUser(id: string, user: User) {
+    return this.http.put<User[]>(`${this.API_URL}/id/${id}`, user, {
       observe: 'response',
       responseType: 'json',
     });
   }
   // ======================================= //
+  getUser(id: string): Observable<User[]> {
+    return this.http.get<User[]>(`${this.API_URL}/id/${id}`);
+  }
 }

@@ -61,9 +61,11 @@
                 <!-- ==================================== -->
                 <div class="form-group col-12 mt-4">
                     <!-- ==================================== -->
-                    <button (click)="createUser()" type="button" class="btn btn-outline-success float-start"> Enviar </button>
+                    <button (click)="actionButton()" type="button" class="btn btn-outline-success float-start"> Enviar
+                    </button>
                     <!-- ==================================== -->
-                    <button type="button" class="btn btn-outline-danger float-end"> Cancelar </button>
+                    <button [routerLink]="['/']" type="button" class="btn btn-outline-danger float-end"> Cancelar
+                    </button>
                 </div>
             </div>
         </form>

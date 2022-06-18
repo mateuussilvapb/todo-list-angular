@@ -26,4 +26,16 @@ export class UserListComponent implements OnInit {
       (error) => {}
     );
   }
+  // ======================================= //
+  deleteUser(id: number) {
+    this.userService.deleteUser(id).subscribe(
+      (response) => {},
+      (error) => {
+        alert(`Erro ao deletar usuáriod e id ${id}`);
+      },
+      () => {
+        this.getUsers();
+      }
+    );
+  }
 }

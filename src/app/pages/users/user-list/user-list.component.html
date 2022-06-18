@@ -47,12 +47,12 @@
                     <!-- ==================================== -->
                     <td>
                         <!-- ==================================== -->
-                        <button class="btn btn-primary">Editar</button>
+                        <button [routerLink]="['/form', user.id]" class="btn btn-primary">Editar</button>
                     </td>
                     <!-- ==================================== -->
                     <td>
                         <!-- ==================================== -->
-                        <button class="btn btn-danger">Excluir</button>
+                        <button (click)="deleteUser(user.id)" class="btn btn-danger">Excluir</button>
                     </td>
                 </tr>
             </tbody>
