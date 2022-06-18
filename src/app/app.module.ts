@@ -10,16 +10,16 @@ import { UserListComponent } from './pages/users/user-list/user-list.component';
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-// =============================================================== //
+// ======================================= //
 @NgModule({
-  // =============================================================== //
+  // ======================================= //
   declarations: [
     AppComponent,
     HeaderComponent,
     UserListComponent,
     UserFormComponent,
   ],
-  // =============================================================== //
+  // ======================================= //
   imports: [
     FormsModule,
     BrowserModule,
@@ -27,9 +27,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  // =============================================================== //
+  // ======================================= //
   providers: [UserService],
-  // =============================================================== //
+  // ======================================= //
   bootstrap: [AppComponent],
 })
 export class AppModule {}
