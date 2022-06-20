@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ButtonComponent } from './components/button/button.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
+import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 
 // ======================================= //
 @NgModule({
@@ -19,18 +20,19 @@ import { LifeCycleComponent } from './components/life-cycle/life-cycle.component
   declarations: [
     AppComponent,
     HeaderComponent,
-    UserListComponent,
-    UserFormComponent,
-    DataBindingComponent,
     ButtonComponent,
+    UserListComponent,
+    TodoListComponent,
+    UserFormComponent,
     LifeCycleComponent,
+    DataBindingComponent,
   ],
   // ======================================= //
   imports: [
     FormsModule,
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
+    AppRoutingModule,
     ReactiveFormsModule,
   ],
   // ======================================= //
