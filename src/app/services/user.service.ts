@@ -12,7 +12,7 @@ export class UserService {
   constructor(private http: HttpClient) {}
   // ======================================= //
   API_URL =
-    'https://sheet.best/api/sheets/084dc25f-a5c7-4917-9443-4c2149e4896b';
+    'https://sheet.best/api/sheets/084dc25f-a5c7-4917-9443-4c2149e4896';
   // ======================================= //
   httpOptions = {
     headers: new HttpHeaders({

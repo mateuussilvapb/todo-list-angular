@@ -1,3 +1,4 @@
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { UserListComponent } from './pages/users/user-list/user-list.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'form/:id',
     component: UserFormComponent,
+  },
+  {
+    path: 'data-binding',
+    component: DataBindingComponent,
   },
 ];
 // ======================================= //

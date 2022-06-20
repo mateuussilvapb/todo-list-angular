@@ -1,0 +1,36 @@
+<!-- <h3 class="text-center">O meu nome é {{returnNome()}}</h3>
+<div class="text-center">
+    <img (click)="clicou()" class="imagem text-center" [src]="imageUrl" alt="Imagem aleatória">
+</div>
+<div class="input">
+    <div class="col-12">
+        <button (click)="clicou()" type="button" class="btn btn-outline-success float-end">Clique aqui!</button>
+    </div>
+    <div class="col-12">
+        <input (keyup)="clicou(input.value)" #input type="text">
+    </div>
+</div> -->
+
+<h1 class="text-center" [class]="textRed" [style.fontSize]="fontSize">O nome é {{ retornaNome() }}</h1>
+
+<div class="text-center">
+    <img class="imagem text-center" [src]="imageUrl" alt="Imagem aleatória">
+</div>
+
+<button class="btn btn-success float-end" [attr.aria-label]="buttonText" [style.backgroundColor]="bgColor">{{
+    buttonText }}</button>
+
+<input class="input" #input (keyup)="clicou(input.value)">
+{{ input.value }}
+
+
+<input type="text" class="input form-control" [(ngModel)]="textInput">
+<p class="text-default">{{ textInput }}</p>
+<div class="col-12">
+    <app-button (click)="destroiComponente()" [btnText]="'Cancelar'" btnType="btn-danger"></app-button>
+    <app-button (clickChildren)="recebeInfoFilho($event)" [btnText]="'Salvar'" btnType="btn-success"></app-button>
+    <app-button (clickChildren)="recebeInfoFilho($event)" btnText="Teste" [btnType]="'btn-default'"></app-button>
+    <app-button (click)="incrementa()" btnText="Clique aqui" [btnType]="'btn-primary'"></app-button>
+</div>
+
+<app-life-cycle [number]="number" *ngIf="!destroy"></app-life-cycle>

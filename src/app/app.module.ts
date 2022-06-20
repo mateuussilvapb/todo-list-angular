@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { UserListComponent } from './pages/users/user-list/user-list.component';
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
+import { ButtonComponent } from './components/button/button.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 // ======================================= //
 @NgModule({
@@ -18,6 +21,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     UserListComponent,
     UserFormComponent,
+    DataBindingComponent,
+    ButtonComponent,
+    LifeCycleComponent,
   ],
   // ======================================= //
   imports: [
