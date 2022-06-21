@@ -13,6 +13,16 @@ import { DataBindingComponent } from './pages/data-binding/data-binding.componen
 import { ButtonComponent } from './components/button/button.component';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
 
 // ======================================= //
 @NgModule({
@@ -23,6 +33,7 @@ import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
     ButtonComponent,
     UserListComponent,
     TodoListComponent,
+    TodoItemComponent,
     UserFormComponent,
     LifeCycleComponent,
     DataBindingComponent,
@@ -30,10 +41,18 @@ import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
   // ======================================= //
   imports: [
     FormsModule,
+    MatCardModule,
+    MatIconModule,
     BrowserModule,
+    MatListModule,
+    MatInputModule,
+    MatButtonModule,
     HttpClientModule,
     AppRoutingModule,
+    MatGridListModule,
+    MatFormFieldModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   // ======================================= //
   providers: [UserService],
