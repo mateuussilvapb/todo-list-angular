@@ -22,6 +22,7 @@ export class UserListComponent implements OnInit {
     this.userService.getUsers().subscribe(
       (response) => {
         this.users = response;
+        
       },
       (error) => {}
     );
