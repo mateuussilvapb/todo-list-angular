@@ -1,3 +1,4 @@
+import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'data-binding',
     component: DataBindingComponent,
+  },
+  {
+    path: 'pipes',
+    component: PipesExampleComponent,
   },
 ];
 // ======================================= //

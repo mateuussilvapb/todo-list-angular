@@ -23,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
+import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
 
 // ======================================= //
 @NgModule({
@@ -37,6 +38,7 @@ import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
     UserFormComponent,
     LifeCycleComponent,
     DataBindingComponent,
+    PipesExampleComponent,
   ],
   // ======================================= //
   imports: [
