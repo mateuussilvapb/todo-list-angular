@@ -1,35 +1,100 @@
 <div class="form-group">
     <label for="number">Number:</label>
     <input type="text" [(ngModel)]="number" class="form-control" id="number">
+    <button class="btn btn-success" (click)="mudaValor()">Clique aqui</button>
 </div>
 
 <div class="">
-    <p>Sem formatação:</p>
+    <hr>
+    <hr>
+    <hr>
+    <p>Número sem formatação:</p>
     <p>{{number | number}}</p>
-
-    <p>Com formatação:</p>
+    <hr>
+    <hr>
+    <hr>
+    <p>Número com formatação:</p>
     <p>{{number | number : '2.0-2'}}</p>
-
-    <p>Em moeda:</p>
+    <hr>
+    <hr>
+    <hr>
+    <p>Número em moeda:</p>
     <p>{{number | currency: "BRL"}}</p>
-
-    <p>Em porcentagem:</p>
+    <hr>
+    <hr>
+    <hr>
+    <p>Número em porcentagem:</p>
     <p>{{number | percent}}</p>
-
+    <hr>
+    <hr>
+    <hr>
+    <p>Texto todo maiúsculo</p>
     <p>{{text | uppercase}}</p>
-
+    <hr>
+    <hr>
+    <hr>
+    <p>Texto todo minúsculo</p>
     <p>{{text | lowercase}}</p>
-
+    <hr>
+    <hr>
+    <hr>
+    <p>Texto com a primeira letra de cada palavra em maiúsculo</p>
     <p>{{text | titlecase}}</p>
-
+    <hr>
+    <hr>
+    <hr>
+    <p>Texto com slice:</p>
+    <p>{{text | slice: 1:5}}</p>
+    <hr>
+    <hr>
+    <hr>
     <p>Data de hoje sem pipe:</p>
     <p>{{date}}</p>
-    
+    <hr>
+    <hr>
+    <hr>
     <p>Data de hoje com pipe:</p>
     <p>{{date | date: "dd/MM/yyyy hh:mm:ss"}}</p>
     <hr>
+    <hr>
+    <hr>
+    <p>{{date | date: "dd/MM/yyyy"}}</p>
+    <hr>
+    <hr>
+    <hr>
     <p>{{date | date: "short"}}</p>
     <hr>
+    <hr>
+    <hr>
     <p>{{date | date: "shortTime"}}</p>
-
+    <hr>
+    <hr>
+    <hr>
+    <p>{{date | date: "full" | uppercase}}</p>
+    <hr>
+    <hr>
+    <hr>
+    <p>Exibindo json sem pipe:</p>
+    <p>{{pessoa}}</p>
+    <hr>
+    <hr>
+    <hr>
+    <p>Exibindo json com pipe:</p>
+    <p>{{pessoa | json}}</p>
+</div>
+<div class="container">
+    <div class="col">
+        <div class="row-6">
+            <div class="form-group">
+                <label for="text">Print pipe test:</label>
+                <input type="text" name="text" id="text" #textt>
+                <button class="btn btn-primary" (click)="add(textt.value)">add</button>
+            </div>
+        </div>
+        <div class="row-6">
+            <h3>Lista formatada</h3>
+            <p>Tamanho da lista {{ nomes.length }}</p>
+            <p>{{nomes | printList}}</p>
+        </div>
+    </div>
 </div>

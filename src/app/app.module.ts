@@ -24,12 +24,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
 import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
+import { PrintListPipe } from './personal-pipes/print-list.pipe';
 
 // ======================================= //
 @NgModule({
   // ======================================= //
   declarations: [
     AppComponent,
+    PrintListPipe,
     HeaderComponent,
     ButtonComponent,
     UserListComponent,

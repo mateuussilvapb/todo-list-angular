@@ -14,7 +14,22 @@ export class PipesExampleComponent implements OnInit {
   // ======================================= //
   text = 'hElLo WoRlD!';
   // ======================================= //
-  date = new Date;
+  date = new Date();
+  // ======================================= //
+  pessoa = {
+    nome: 'Mateus',
+    idade: '25',
+    profissao: 'Desenvolvedor',
+  };
+  // ======================================= //
+  nomes = ['Mateus'];
   // ======================================= //
   ngOnInit(): void {}
+  // ======================================= //
+  mudaValor() {
+    this.number = 123456789;
+  }
+  add(text: string) {
+    this.nomes.push(text);
+  }
 }
